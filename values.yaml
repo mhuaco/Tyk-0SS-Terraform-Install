@@ -19,7 +19,7 @@ global:
     # operator determines whether Tyk Operator component should be installed or not.
     # Tyk Operator needs cert-manager to be installed beforehand. Make sure that cert-manager is installed.
     # For further details, please refer to https://tyk.io/docs/tyk-stack/tyk-operator/installing-tyk-operator/
-    operator: true
+    operator: false
 
   license:
     # The license key needed by Tyk Operator to work.
@@ -490,10 +490,6 @@ tyk-operator:
       value: "8443"
     - name: TYK_HTTP_INGRESS_PORT
       value: "8080"
-    - name: TYK_OPERATOR_LICENSEKEY
-      value: "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhbGxvd2VkX25vZGVzIjoiOTllMjJlYWUtMmMwNi00YzIxLTcxMzYtMGMxZjgwNjM3OTk2IiwiZXhwIjoxNzMyNTc5MTk5LCJpYXQiOjE3Mjk4Nzk0NjcsIm93bmVyIjoiNjcxYmRkOTNiZGViM2EwMDAxOTM1NWIyIiwic2NvcGUiOiJ2ZXJzaW9uLW9wZXJhdG9yIiwidiI6IjIifQ.HvH8k17pFGh9J9M7mKL_PyyKM3dLULWaSYg3sb2yCFRYNkiQKai6F_QWnspSIR7hgAOaEbzxG04CIDD5PPF1j4sg_HaTldiVlpXC0s4tgEIw9rR-Thn4K85W39kyA5i7yFsBtLRAi1QutczFY_SqMa8HEZWtVaolA6lcrW7HRwTEvkSKOXiUR69HNTr_XC5ezEhKIOVLQbqmAHTNdDj7Cz0KLIttFu4DC9DHs69dZPvbbfp8CQ5zThZTLF3HB_F1muFbymPlrC49dMzuCCUZjdPSinJt9mfUK7EDtsubp_dTvxXJ0AJVZEVEwEiAxs25xJvbzNlBoCfxvxuDmljxnA"
-    - name: TYK_MODE
-      value: "pro"
   image:
     # image repository for Tyk Operator
     repository: tykio/tyk-operator
